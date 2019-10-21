@@ -1,0 +1,18 @@
+.headarea{
+    padding: 0 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+li{
+    display: inline-block;
+    position: relative;
+}
+ul.navigation{
+    font-family: serif;
+    font-size: 15px;
+    text-align: center;
+    color: black;
+    padding: 12px 12px 12px;
+}
