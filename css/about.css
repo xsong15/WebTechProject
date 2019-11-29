@@ -31,12 +31,16 @@ a:hover{
 #text{
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 250px;
+    margin-right: 250px;
 }
 h1{
     color: lightseagreen;
 }
+#gallary{
+    text-align: center;
+}
 #link{
-    margin-top: 30px;
     margin-bottom: 30px;
     margin-left: 350px;
     margin-right: 350px;
