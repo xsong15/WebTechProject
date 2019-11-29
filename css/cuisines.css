@@ -2,7 +2,7 @@ body{
     margin: 0;
 }
 #nav{
-    background-color:rgb(255, 51, 0);
+    background-color: lightseagreen;
     height: 50px;
     margin: 0;
 }
@@ -14,12 +14,12 @@ ul{
 ul li{
     display: inline-block;
     font-size: 18px;
-    font-family: cursive;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 a{
     color:black;
     text-decoration-line: none;
-    padding-right: 10px;
+    padding-right: 15px;
 }
 a:hover{
     background-color: white;
@@ -30,8 +30,13 @@ table{
     border: 2px black solid;
     border-spacing: 0;
     width: 100%;
-    }
-
+}
 p{
     text-align: center;
-    }
+}
+#link{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 350px;
+    margin-right: 350px;
+}

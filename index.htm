@@ -6,21 +6,53 @@
     <meta name ="keywords" content="chinese food, regional cuisines, recipes, must-try restaurants">
     <meta name ="author" content="xintong song">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>WebTech Term Project</title>
+    <title>Home Page</title>
     <link rel="stylesheet" href="css/index.css" type="text/css"/>
+    <script>
+        let p = 300;
+        let i = 0;
+        const msgList = ["Welcome to WowChineseFood! Wow!"];
+
+        function doScroll()
+        {
+            let x = document.getElementById("content");
+            x.innerHTML = msgList[i];
+            x.style.left = p + "px";
+            console.log(i);
+
+            if (p>700)
+                {
+                p = 320;
+                i ++;
+                if (i == msgList.length)
+                    {
+                    i = 0;
+                    }
+                }
+                else 
+                {
+                    p = p + 1;
+                }
+                setTimeout("doScroll()", 15);
+        }
+    </script>
 </head>
 
-<body>
+<body onload="doScroll()">
     <div id="nav">
         <ul>
             <li><a href="index.htm" target="_blank">Home<a></li>
             <li><a href="about.htm" target="_blank">About<a></li>
             <li><a href="contact.htm" target="_blank">Contact<a></li>
             <li><a href="restaurants.htm" target="_blank">Must-Try Restaurants<a></li>
-            <li><a href="cuisines.htm" target="_blank">8 Regional Cursines<a></li>        
+            <li><a href="cuisines.htm" target="_blank">8 Regional Cuisines<a></li>        
             <li><a href="sitemap.htm" target="_blank">Site-Map<a></li>
             <li><a href="credits.htm" target="_blank">Credits<a></li>
         </ul>
+    </div>
+
+    <div id="content">
+        <h1>Welcome to WowChineseFood! Wow!<h1>
     </div>
 
     <div id="video">
@@ -28,9 +60,10 @@
     </div>
 
     <div id="link">
-        <a href="contact.htm">Contact</a>
-        <a href="sitemap.htm">Site Map</a>
+        <ul>
+            <li><a href="contact.htm" target="_blank">Feedback</a><li>
+            <li><a href="sitemap.htm" target="_blank">Site Map</a><li>
+        </ul>
     </div>
 </body>
-
 </html>
