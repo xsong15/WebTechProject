@@ -24,13 +24,6 @@ a{
 a:hover{
     background-color: white;
 }
-#video{
-    margin-top: 50px;
-    margin-bottom: 50px;
+p{
     text-align: center;
-}
-#link{
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
