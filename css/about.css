@@ -37,8 +37,14 @@ a:hover{
 h1{
     color: lightseagreen;
 }
-#gallary{
+#gallery{
     text-align: center;
+}
+img{
+    border-width: 5px;
+    border-style: solid;
+    width: 250px;
+    height: 350px;
 }
 #link{
     margin-bottom: 30px;

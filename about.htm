@@ -8,9 +8,36 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About</title>
     <link rel="stylesheet" href="css/about.css" type="text/css"/>
+    <script type="text/javascript">
+        let i = 0;
+        
+        const slides =
+        [
+            "picture/food1.jpeg",
+            "picture/food2.jpeg",
+            "picture/food3.jpeg",
+            "picture/food4.jpeg",
+            "picture/food5.jpeg",
+            "picture/food6.jpeg"
+        ];
+
+        function slideShow()
+        {
+            let foodImg = document.getElementById("foodPicture");
+
+            if (i == slides.length)
+            {
+                i = 0;
+            }
+
+            foodImg.src = slides[i];
+            i = i + 1;
+            setTimeout("slideShow()", 1000);
+        }
+    </script>
 </head>
 
-<body>
+<body onload="slideShow()">
     <div id="nav">
         <ul>
             <li><a href="index.htm" target="_blank">Home<a></li>
@@ -34,14 +61,19 @@
        My name is <strong>Xintong</strong> and I'm a senior at <strong>Babson College</strong>. Originally from <strong>Shenzhen, China,</strong> I live in <strong>Newton, Massachusett</strong> now with two college classmates. When I'm free, I like exploring food, creating my own recipes, and bringing friends to try Chinese restaurants in town. My friends call me <strong>"soup master"</strong> because I  make super delicious, healhty, and 100% natural ingredients soup.
     </div>
 
-    <div id="gallary">
-        <h1>Hello! Hello!</h1>
-        
+    <div id="gallery">
+        <h1>My Food Gallery</h1>
+        <p>
+            <img src="picture/food1.jpeg"
+            alt="slideshow of food"
+            title="food"
+            id="foodPicture"/>
+        </p>
     </div>
 
     <div id="link">
         <ul>
-            <li><a href="contact.htm" target="_blank">Feedback</a><li>
+            <li><a href="contact.htm" target="_blank">Contact</a><li>
             <li><a href="sitemap.htm" target="_blank">Site Map</a><li>
         </ul>
     </div>

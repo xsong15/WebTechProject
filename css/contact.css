@@ -24,6 +24,10 @@ a{
 a:hover{
     background-color: white;
 }
+#contact{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 form {
     border: 1px solid black; 
     font-family: Arial;
@@ -31,13 +35,11 @@ form {
     background-color:lightseagreen;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 30px;
     width: 700px;
     padding: 20px 50px 20px 50px; 
 }
 #link{
-    margin-top: 30px;
     margin-bottom: 30px;
     margin-left: 350px;
     margin-right: 350px;
