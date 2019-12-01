@@ -24,8 +24,23 @@ a{
 a:hover{
     background-color: white;
 }
+h1{
+    margin-top: 30px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+#credits{
+    border: 2px black solid;
+    border-spacing: 0;
+    margin-left: 500px;
+    margin-right: 500px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#list a{
+    padding: 0px;
+}
 #link{
     margin-bottom: 30px;
-    margin-left: 350px;
+    margin-left: 370px;
     margin-right: 350px;
 }

@@ -24,8 +24,34 @@ a{
 a:hover{
     background-color: white;
 }
+h1{
+    margin-top: 30px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+#sitemap{
+    margin-top: 0px;
+    margin-left: 500px;
+    margin-right: 420px;
+    margin-bottom: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#sitemaplist ol{
+    padding: 0px;
+}
+#sitemaplist ol a{
+    padding: 0px;
+}
+#honorcode{
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 #link{
     margin-bottom: 30px;
-    margin-left: 350px;
+    margin-left: 370px;
     margin-right: 350px;
 }

@@ -32,7 +32,6 @@ form {
     border: 1px solid black; 
     font-family: Arial;
     color:black;
-    background-color:lightseagreen;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
@@ -41,6 +40,6 @@ form {
 }
 #link{
     margin-bottom: 30px;
-    margin-left: 350px;
+    margin-left: 370px;
     margin-right: 350px;
 }
