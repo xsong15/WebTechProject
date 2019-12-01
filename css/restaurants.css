@@ -8,8 +8,7 @@ body{
 }
 ul{
     display: inline-block;
-    padding-left: 150px;
-    padding-right: 100px;
+    padding-left: 230px;
 }
 ul li{
     display: inline-block;
@@ -29,6 +28,5 @@ p{
 }
 #link{
     margin-bottom: 30px;
-    margin-left: 370px;
-    margin-right: 350px;
+    margin-left: 375px;
 }
