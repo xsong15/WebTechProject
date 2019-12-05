@@ -8,7 +8,7 @@ body{
 }
 ul{
     display: inline-block;
-    padding-left: 230px;
+    padding-left: 350px;  
 }
 ul li{
     display: inline-block;
@@ -29,20 +29,29 @@ h1{
 table{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
-    margin-left: 250px;
-    margin-right: 250px;
+    margin-left: 350px;
+    margin-right: 350px;
     border: 2px black solid;
     border-spacing: 0;
 }
-#foodmap{
+#foodMap{
     text-align: center;
     margin-top: 30px;
 }
-img{
-    width: 700px;
-    height: 500px;
+#foodPic{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 250px;
+}
+#h{
+    text-align: center;
+}
+.pic{
+    float: left;
 }
 #link{
+    margin-top: 200px;
+    margin-right: 390px;
     margin-bottom: 30px;
-    margin-left: 375px;
+    margin-left: 390px;
 }

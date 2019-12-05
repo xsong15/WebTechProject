@@ -7,7 +7,68 @@
     <meta name ="author" content="xintong song">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Regional Cuisines</title>
+    <script
+        crossorigin="anonymous"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        src="https://code.jquery.com/jquery-3.4.1.min.js">
+    </script>
     <link rel="stylesheet" href="css/cuisines.css" type="text/css"/>
+
+    <script type="text/javascript">
+        function enlarge(x)
+        {
+            let i = document.getElementById(x);
+            let w = i.width;
+            i.width = w * (1 + 0.5);
+            let h = document.getElementById("h");
+  
+            if (x == "dimsum")
+            {
+              h.innerHTML = "Guangdong/Cantonese Cuisine(粤菜)";             
+            }       
+            else if (x == "fujian")
+            {
+              h.innerHTML = "Fujian Cuisine(闽菜)";
+            }
+            else if (x == "zhejiang")
+            {
+              h.innerHTML = "Zhejiang Cuisine(浙菜)";
+            }
+            else if (x == "anhui")
+            {
+              h.innerHTML = "Anhui Cuisine(徽菜)";
+            }
+            else if (x == "jiangsu")
+            {
+              h.innerHTML = "Jiangsu Cuisine(苏菜)";
+            }
+            else if (x == "shandong")
+            {
+              h.innerHTML = "Shandong Cuisine(鲁菜)";
+            }
+            else if (x == "shandong")
+            {
+              h.innerHTML = "Sichuan Cuisine(川菜)";
+            }
+            else if (x == "shandong")
+            {
+              h.innerHTML = "Hunan Cuisine(湘菜)";
+            }
+        }
+  
+        function shrink(x)
+        {
+            let i = document.getElementById(x);
+            let w = i.width;
+            i.width = w / (1 + 0.5);
+            i.style.border = "None";
+        };
+
+        function findSelected() {
+            let selected;
+            selected = $(".color-red");
+        }
+      </script>
 </head>
 
 <body>
@@ -23,37 +84,128 @@
         </ul>
     </div>
     
-    <table>
-        <h1>Regions and Cuisines</h1>
+    <div id="main">
+        <table>
+            <h1>Regions and Cuisines</h1>
 
-        <tr>
-            <th>Region</th> 
-            <th>Name</th>
-        </tr>
-        <tr> 
-            <td>Eastern China</td> 
-            <td>Guangdong/Cantonese Cuisine(粤菜); Fujian Cuisine(闽菜); Zhejiang Cuisine(浙菜); Anhui Cuisine(徽菜); Jiangsu Cuisine(苏菜)</td>
-        </tr>
-        <tr> 
-            <td>Northern China</td> 
-            <td>Shandong Cuisine(鲁菜); Beijing Cuisine; Inner Mongolia Cuisine</td>
-        </tr>
-        <tr> 
-            <td>Western China</td> 
-            <td>Xinjiang Cuisine; Tibetan Cuisine</td>
-        </tr>
-        <tr> 
-            <td>Central China</td> 
-            <td>Sichuan Cuisine(川菜); Hunan Cuisine(湘菜)</td>
-        </tr>
-        <tr> 
-            <td>Southern</td> 
-            <td>Southern Minority Food</td>
-        </tr>
-    </table>
+            <tr>
+                <th>Region</th> 
+                <th>Name</th>
+            </tr>
+            <tr> 
+                <td>Eastern China</td> 
+                <td class="color-red">Guangdong/Cantonese Cuisine(粤菜); Fujian Cuisine(闽菜); Zhejiang Cuisine(浙菜); Anhui Cuisine(徽菜); Jiangsu Cuisine(苏菜)</td>
+            </tr>
+            <tr> 
+                <td>Northern China</td> 
+                <td class="color-red">Shandong Cuisine(鲁菜); Beijing Cuisine; Inner Mongolia Cuisine</td>
+            </tr>
+            <tr> 
+                <td>Western China</td> 
+                <td>Xinjiang Cuisine; Tibetan Cuisine</td>
+            </tr>
+            <tr> 
+                <td>Central China</td> 
+                <td class="color-red">Sichuan Cuisine(川菜); Hunan Cuisine(湘菜)</td>
+            </tr>
+            <tr> 
+                <td>Southern</td> 
+                <td>Southern Minority Food</td>
+            </tr>
+        </table>
 
-    <div id="foodmap">
-    <img src="picture/region.png" alt="Food Regions" title="Food Regions"></p>
+        <div id="foodMap">
+            <img src="picture/region.png" 
+            alt="Food Regions" 
+            title="Food Regions"
+            width=700px;
+            height=500px;>
+        </div>
+
+        <h1 id="h">Manipulating Styles and Images</h1>
+
+        <div id="foodPic">
+            <p>
+                <img src="picture/dimsum.jpg" 
+                onmouseover="enlarge(this.id)" 
+                onmouseout="shrink(this.id)" 
+                alt="Image goes here" 
+                title="dimsum" 
+                width=150px
+                id="dimsum"
+                class="pic">
+            </p>
+            <p>
+                <img src="picture/fujian.jpg" 
+                onmouseover="enlarge(this.id)" 
+                onmouseout="shrink(this.id)" 
+                alt="Image goes here" 
+                title="fujian" 
+                width=150px 
+                id="fujian"
+                class="pic">
+            </p>
+            <p>
+                <img src="picture/zhejiang.jpg" 
+                onmouseover="enlarge(this.id)" 
+                onmouseout="shrink(this.id)" 
+                alt="Image goes here" 
+                title="zhejiang" 
+                width=150px 
+                id="zhejiang"
+                class="pic">
+            </p>
+            <p>
+                <img src="picture/anhui.png" 
+                onmouseover="enlarge(this.id)" 
+                onmouseout="shrink(this.id)" 
+                alt="Image goes here" 
+                title="anhui" 
+                width=150px 
+                id="anhui"
+                class="pic">
+            </p>
+            <p>
+                <img src="picture/jiangsu.jpg" 
+                onmouseover="enlarge(this.id)" 
+                onmouseout="shrink(this.id)" 
+                alt="Image goes here" 
+                title="jiangsu" 
+                width=150px 
+                id="jiangsu"
+                class="pic">
+            </p>
+            <p>
+                <img src="picture/shandong.jpg" 
+                onmouseover="enlarge(this.id)" 
+                onmouseout="shrink(this.id)" 
+                alt="Image goes here" 
+                title="shandong" 
+                width=150px 
+                id="shandong"
+                class="pic">
+            </p>
+            <p>
+                <img src="picture/sichuan.jpg" 
+                onmouseover="enlarge(this.id)" 
+                onmouseout="shrink(this.id)" 
+                alt="Image goes here" 
+                title="sichuan" 
+                width=150px 
+                id="sichuan"
+                class="pic">
+            </p>
+            <p>
+                <img src="picture/hunan.jpg" 
+                onmouseover="enlarge(this.id)" 
+                onmouseout="shrink(this.id)" 
+                alt="Image goes here" 
+                title="hunan" 
+                width=150px 
+                id="hunan"
+                class="pic">
+            </p>
+        </div>
     </div>
     
     <div id="link">

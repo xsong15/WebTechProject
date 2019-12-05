@@ -8,7 +8,7 @@ body{
 }
 ul{
     display: inline-block;
-    padding-left: 230px;  
+    padding-left: 350px;  
 }
 ul li{
     display: inline-block;
@@ -44,6 +44,8 @@ h1{
     font-size: 20px;
 }
 #link{
+    margin-top: 200px;
+    margin-right: 390px;
     margin-bottom: 30px;
     margin-left: 300px;
 }
