@@ -22,7 +22,7 @@
             i.width = w * (1 + 0.5);
             let h = document.getElementById("h");
   
-            if (x == "dimsum")
+            if (x == "guangdong")
             {
               h.innerHTML = "Guangdong/Cantonese Cuisine(粤菜)";             
             }       
@@ -63,24 +63,28 @@
             i.width = w / (1 + 0.5);
             i.style.border = "None";
         };
-
-        function findSelected() {
-            let selected;
-            selected = $(".color-red");
-        }
+ 
+        $(document).ready(function(){ 
+            $(".color-red").hover(function(){
+                $(this).css({"color":"red"},
+                function(){
+                $(this).css({"color":"black"})
+                })
+            })
+        });
       </script>
 </head>
 
 <body>
     <div id="nav">
         <ul>
-            <li><a href="index.htm" target="_blank">Home<a></li>
-            <li><a href="about.htm" target="_blank">About<a></li>
-            <li><a href="contact.htm" target="_blank">Contact<a></li>
-            <li><a href="restaurants.htm" target="_blank">Must-Try Restaurants<a></li>
-            <li><a href="cuisines.htm" target="_blank">8 Regional Cuisines<a></li>        
-            <li><a href="sitemap.htm" target="_blank">Site-Map<a></li>
-            <li><a href="credits.htm" target="_blank">Credits<a></li>
+            <li><a href="index.htm" target="_blank">Home</a></li>
+            <li><a href="about.htm" target="_blank">About</a></li>
+            <li><a href="contact.htm" target="_blank">Contact</a></li>
+            <li><a href="restaurants.htm" target="_blank">Must-Try Restaurants</a></li>
+            <li><a href="cuisines.htm" target="_blank">8 Regional Cuisines</a></li>        
+            <li><a href="sitemap.htm" target="_blank">Site-Map</a></li>
+            <li><a href="credits.htm" target="_blank">Credits</a></li>
         </ul>
     </div>
     
@@ -98,7 +102,7 @@
             </tr>
             <tr> 
                 <td>Northern China</td> 
-                <td class="color-red">Shandong Cuisine(鲁菜); Beijing Cuisine; Inner Mongolia Cuisine</td>
+                <td class="color-red">Shandong Cuisine(鲁菜);</td>
             </tr>
             <tr> 
                 <td>Western China</td> 
@@ -130,10 +134,10 @@
                 onmouseover="enlarge(this.id)" 
                 onmouseout="shrink(this.id)" 
                 alt="Image goes here" 
-                title="dimsum" 
+                title="guangdong" 
                 width=150px
                 height=120px
-                id="dimsum"
+                id="guangdong"
                 class="pic">
             </p>
             <p>
@@ -218,8 +222,8 @@
     
     <div id="link">
         <ul>
-            <li><a href="contact.htm" target="_blank">Contact</a><li>
-            <li><a href="sitemap.htm" target="_blank">Site Map</a><li>
+            <li><a href="contact.htm" target="_blank">Contact</a></li>
+            <li><a href="sitemap.htm" target="_blank">Site Map</a></li>
         </ul>
     </div>
 </body>
