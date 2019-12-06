@@ -8,7 +8,7 @@ body{
 }
 ul{
     display: inline-block;
-    padding-left: 20%;  
+    padding-left: 25%;  
 }
 ul li{
     display: inline-block;
@@ -49,5 +49,5 @@ img{
 #link{
     margin-top: 200px;
     margin-bottom: 30px;
-    margin-left: 30%;
+    margin-left: 25%;
 }
