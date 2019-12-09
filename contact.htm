@@ -7,6 +7,39 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact</title>
     <link rel="stylesheet" href="css/contact.css" type="text/css"/>
+    <script>
+        function display()
+        {
+            let myForm = document.getElementById("form");
+            let first = myForm.firstName.value;
+            let last = myForm.lastName.value;
+            let gender = myForm.gender.value;
+            let email = myForm.email.value;
+            let comments = myForm.comments.value;
+
+            if (first == "" || last == "")
+            {
+                alert("Please enter your first name and last name!");
+            }
+            else if (gender == "")
+            {
+                alert("Please select your gender!");
+            }
+            else if (email == "")
+            {
+                alert("Please enter your email!");
+            }
+            else if (comments == "")
+            {
+                alert("Please leave some words!");
+            }
+            else if (first == "" || last == "" || gender == "" || email == "")
+            {
+                alert("Please fill in the blanks!");
+            }
+            return false;
+        }
+    </script>
 </head>
 
 <body>
@@ -26,23 +59,23 @@
         <h1>Contact Me</h1>
     </div>
 
-    <form mathod="POST">
+    <form action="" method="post" id="form">
         <p>
-        Last Name: 
+        First Name: 
         <input
             type="text"
-            name="lName"
-            maxlength="30"
-            size="20"
-            placeholder="Last name"
-        > 
-        First Name:
-        <input
-            type="text"
-            name="lName"
+            name="firstName"
             maxlength="30"
             size="20"
             placeholder="First name"
+        > 
+        Last Name:
+        <input
+            type="text"
+            name="lastName"
+            maxlength="30"
+            size="20"
+            placeholder="Last name"
         > 
         </p>
         Gender: 
@@ -64,7 +97,7 @@
         </p>
         
         <p><button type="submit" name="submit" value="Click me to submit">
-            submit <img src="picture/mailbox.png" height="30" alt="submit_button"></button>
+            submit <img src="picture/mailbox.png" height="30" alt="submit_button" onclick ="return display()"></button>
             <button type="reset" name="reset" value="Reset">
             reset <img src="picture/reset.png" height="30" alt="reset_button"></button>
         </p>
