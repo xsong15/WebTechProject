@@ -8,6 +8,68 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Must-Try Restaurants</title>
     <link rel="stylesheet" href="css/restaurants.css" type="text/css"/>
+    <script>
+        function info(restaurant)
+        {
+            let dk = document.getElementById("districtKitchen");
+            let xy = document.getElementById("xiangYu");
+            let sm = document.getElementById("suMiao");
+            let lys = document.getElementById("liuYishou");
+            let jg = document.getElementById("joyfulGardan");
+            let sc = document.getElementById("saigonCorner");
+            let tm = document.getElementById("tastyMomo");
+            let iq = document.getElementById("ifreshNoodle");
+            let ik = document.getElementById("IQKitchen");
+            let bh = document.getElementById("BunsHouse");
+
+            let h = document.getElementById("display")
+            
+            if (restaurant == "districtKitchen")
+            {
+                h.innerHTML = "🍚 Shandong Cuisine 🍚 🏠 2 Florence St, Malden, MA 02148 🚗";
+            }
+            else if (restaurant == "xiangYu")
+            {
+                h.innerHTML = "🍚 Hunan Cuisine 🍚 🏠 1223 Beacon St, Brookline, MA 02446 🚗";
+            }
+            else if (restaurant == "suMiao")
+            {
+                h.innerHTML = "🍚 Hunan Cuisine 🍚 🏠 270 Third St, Cambridge, MA 02142 🚗";
+            }
+            else if (restaurant == "liuYishou")
+            {
+                h.innerHTML = "🍚 Sichuan Cuisine 🍚 🏠 702 Washington St, Boston, MA 02111 🚗";
+            }
+            else if (restaurant == "joyfulGardan")
+            {
+                h.innerHTML = "🍚 Cantonese Cuisine 🍚 🏠 550 Arsenal St, Watertown, MA 02472 🚗";
+            }
+            else if (restaurant == "saigonCorner")
+            {
+                h.innerHTML = "🍚 Cantonese Cuisine 🍚 🏠 24 Billings Rd, Quincy, MA 02171 🚗";
+            }
+            else if (restaurant == "tastyMomo")
+            {
+                h.innerHTML = "🍚 Tibetan Cuisine 🍚 🏠 503 Medford St, Somerville, MA 02145 🚗";
+            }
+            else if (restaurant == "ifreshNoodle")
+            {
+                h.innerHTML = "🍚 Street Food 🍚 🏠 182 Brighton Ave, Boston, MA 02134 🚗";
+            }
+            else if (restaurant == "IQKitchen")
+            {
+                h.innerHTML = "🍚 Street Food 🍚 🏠 1158 Beacon St, Newton, MA 02461 🚗";
+            }
+            else if (restaurant == "bunsHouse")
+            {
+                h.innerHTML = "🍚 Northeastern Cuisine 🍚 🏠 338 Ferry St, Everett, MA 02149 🚗";
+            }
+            else if (restaurant == "ourZone")
+            {
+                h.innerHTML = "🍚 Sichuan Cuisine 🍚 🏠 1583 Commonwealth Avenue, Brighton, MA 02135 🚗";
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -23,6 +85,8 @@
         </ul>
     </div>
     
+    <h1 id="header">❓Click Map to Find Chinese Restaurants in the Greater Boston Area❓</h1>
+
     <p>
         <img src="picture/boston.jpg" usemap="#Greater Boston Chinese Food Map" alt="Greater Boston Map" title="Click Greater Boston Map"/>
 
@@ -43,10 +107,30 @@
 
             <area shape="circle" coords="171, 259, 12" href="https://www.yelp.com/biz/ifresh-noodle-allston" alt="Street Food" title="iFresh Noodle" target="_blank">        
 
-            <area shape="circle" coords="110, 289, 20" href="https://www.iqkitchenma.com/" alt="Street Food" title="IQ kitchen" target="_blank">        
+            <area shape="circle" coords="110, 289, 20" href="https://www.iqkitchenma.com/" alt="Street Food" title="IQ kitchen" target="_blank"> 
+            
+            <area shape="circle" coords="233, 205, 5" href="https://www.bunshousema.com/" alt="Northeastern Food" title="Bun‘s House" target="_blank">       
+            
+            <area shape="circle" coords="150, 277, 8" href="https://www.ourzone.online/" alt="Sichuan Cuisine" title="Our Zone" target="_blank">        
+
         </map>
     </p>
 
+    <h1 id="display">Restaurants Info</h1>
+
+    <p class="button">
+        <button id="districtKitchen" onclick="info(this.id)">District Kitchen</button>
+        <button id="xiangYu" onclick="info(this.id)">Xiangyu China Bistro</button>
+        <button id="suMiao" onclick="info(this.id)">Sumiao Hunan Kitchen</button>
+        <button id="liuYishou" onclick="info(this.id)">Liuyishou Hotpot</button>
+        <button id="joyfulGardan" onclick="info(this.id)">Joyful Garden</button>
+        <button id="saigonCorner" onclick="info(this.id)">Saigon Corner</button>
+        <button id="tastyMomo" onclick="info(this.id)">Tasty Momo</button>
+        <button id="ifreshNoodle" onclick="info(this.id)">iFresh Noodle</button>
+        <button id="IQKitchen" onclick="info(this.id)">IQ kitchen</button>
+        <button id="bunsHouse" onclick="info(this.id)">Bun‘s House</button>
+        <button id="ourZone" onclick="info(this.id)">Our Zone</button>
+    </p>
 
     <div id="link">
         <ul>
