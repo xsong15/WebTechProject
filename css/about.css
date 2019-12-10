@@ -29,12 +29,14 @@ a:hover{
     margin-top: 10px;
 }
 #text{
-    text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-left: 250px;
     margin-right: 250px;
+    margin-bottom: 30px;
+    text-align: justify;
 }
 h1{
+    text-align: center;
     color: lightseagreen;
 }
 #gallery{
